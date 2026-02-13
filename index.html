@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Benja | Portafolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;700;800&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Plus Jakarta Sans', sans-serif; background-color: #f7f7f7; }
+        .bento-card {
+            @apply bg-white border-[3px] border-black rounded-[2.5rem] p-8 transition-all duration-300;
+            box-shadow: 8px 8px 0px 0px rgba(0,0,0,1);
+        }
+        .bento-card:hover {
+            transform: translate(-4px, -4px);
+            box-shadow: 12px 12px 0px 0px rgba(0,0,0,1);
+        }
+    </style>
+</head>
+<body class="p-6 md:p-12">
+    <main class="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-6">
+        
+        <div class="bento-card md:col-span-2 md:row-span-2 flex flex-col justify-between bg-[#FFDE00]">
+            <h1 class="text-6xl font-extrabold uppercase leading-[0.9] tracking-tighter">Benja<br>The Best</h1>
+            <p class="mt-8 text-xl font-bold uppercase tracking-tight">Desarrollador & Creativo Digital</p>
+        </div>
+
+        <div class="bento-card md:col-span-2 bg-white flex flex-col justify-center">
+            <h2 class="text-2xl font-black uppercase">¡Hola Mundo!</h2>
+            <p class="mt-2 text-gray-700 font-medium">Bienvenido a mi portafolio minimalista inspirado en el estilo Bento.</p>
+        </div>
+
+        <div class="bento-card md:col-span-1 bg-[#4ADE80] flex items-center justify-center">
+            <a href="https://github.com/benjathebest" class="text-2xl font-black hover:scale-110 transition-transform">GITHUB</a>
+        </div>
+
+        <div class="bento-card md:col-span-1 bg-[#60A5FA] flex items-center justify-center text-center">
+            <p class="font-black uppercase text-sm">HTML • CSS • JS</p>
+        </div>
+
+        <div class="bento-card md:col-span-2 bg-black text-white flex justify-between items-center group">
+            <p class="text-xl font-bold uppercase">Hablemos</p>
+            <div class="text-4xl group-hover:translate-x-2 transition-transform">→</div>
+        </div>
+
+    </main>
+</body>
+</html>
