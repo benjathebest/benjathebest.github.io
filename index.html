@@ -6,20 +6,35 @@
     <title>Benja | Portfolio</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
- <style>
-    :root {
-        /* Este es el azul cielo apagado que buscamos */
-        --bg: #A5C9CA; 
-        
-        --black: #1a1a1a;
-        --yellow: #FFD600;
-        --blue: #38BDF8;
-        --green: #4ADE80;
-        --purple: #C084FC;
-        --orange: #FB923C;
-    }
-    /* ... resto del código ... */
-</style>
+    <style>
+        :root {
+            --bg: #fdfdfd;
+            --black: #1a1a1a;
+            --yellow: #FFD600;
+            --blue: #38BDF8;
+            --green: #4ADE80;
+            --purple: #C084FC;
+            --orange: #FB923C;
+        }
+        body { 
+            font-family: 'Inter', sans-serif; 
+            background-color: var(--bg); 
+            color: var(--black);
+        }
+        h1, h2, h3 { font-family: 'Archivo Black', sans-serif; }
+
+        .bento-card {
+            @apply bg-white border-[4px] border-black rounded-[2.5rem] p-8 transition-all duration-300 relative overflow-hidden;
+            box-shadow: 10px 10px 0px 0px rgba(0,0,0,1);
+        }
+        .bento-card:hover {
+            transform: translate(-4px, -4px);
+            box-shadow: 14px 14px 0px 0px rgba(0,0,0,1);
+        }
+        .tag {
+            @apply border-2 border-black px-4 py-1 rounded-full text-[10px] font-black uppercase bg-white;
+        }
+    </style>
 </head>
 <body class="p-6 md:p-16">
 
@@ -28,39 +43,39 @@
         <div class="bento-card md:col-span-2 md:row-span-2 bg-[#FFD600] flex flex-col justify-between min-h-[400px]">
             <div class="flex flex-col gap-2">
                 <span class="text-sm font-black uppercase tracking-widest bg-black text-white self-start px-3 py-1 rounded-md">Portafolio 2026</span>
-                <h1 class="text-7xl md:text-8xl leading-none mt-4 tracking-tighter">BENJA<br>THE BEST</h1>
+                <h1 class="text-7xl md:text-8xl leading-none mt-4 tracking-tighter">xXFEOXx<br></h1>
             </div>
-            <p class="text-2xl font-bold leading-tight">Desarrollador enfocado en interfaces minimalistas y código limpio.</p>
+            <p class="text-2xl font-bold leading-tight">Soy un Desarollador, El Cual Configura Plugin y Crea Plugins para servidores Grandes y Funcionales, Aca te dejo algunos de los proyectos en los cuales participe.</p>
         </div>
 
         <div class="bento-card md:col-span-2 bg-[#C084FC] group cursor-pointer">
             <div class="flex justify-between items-start mb-6">
-                <h3 class="text-4xl leading-none">CRAFT<br>STUDIO</h3>
+                <h3 class="text-4xl leading-none">Virnox<br>NetWork</h3>
                 <div class="text-xs font-black bg-black text-white px-2 py-1 rounded">GITHUB</div>
             </div>
-            <p class="font-bold text-lg mb-6">Una plataforma interactiva para creadores digitales construida con React.</p>
+            <p class="font-bold text-lg mb-6">Actualmente el servidor esta cerrado dado a un conflicto entre los Dueño, en ese servidor mis responsabilidades eran, Guiar al Equipo de Staff y la Configuracion interna del servidor, En Ese servidor yo contaba con el Rango Head Manager.</p>
             <div class="flex gap-2">
-                <span class="tag italic">React</span>
-                <span class="tag italic">Framer Motion</span>
+                <span class="tag italic">xXFEOXx</span>
+                <span class="tag italic">Head Manager</span>
             </div>
             <div class="absolute -bottom-4 -right-4 text-9xl opacity-10 group-hover:rotate-12 transition-transform">🚀</div>
         </div>
 
         <div class="bento-card md:col-span-1 bg-[#38BDF8] flex flex-col justify-between">
-            <h3 class="text-2xl mb-4">MI STACK</h3>
+            <h3 class="text-2xl mb-4">Los Idiomas en los que configuro</h3>
             <div class="grid grid-cols-2 gap-2">
-                <div class="bg-white/50 p-2 rounded-xl text-center text-xs font-black border-2 border-black">JS</div>
-                <div class="bg-white/50 p-2 rounded-xl text-center text-xs font-black border-2 border-black">TS</div>
-                <div class="bg-white/50 p-2 rounded-xl text-center text-xs font-black border-2 border-black">CSS</div>
+                <div class="bg-white/50 p-2 rounded-xl text-center text-xs font-black border-2 border-black">Java Script</div>
+                <div class="bg-white/50 p-2 rounded-xl text-center text-xs font-black border-2 border-black">Phyton</div>
+                <div class="bg-white/50 p-2 rounded-xl text-center text-xs font-black border-2 border-black">React</div>
                 <div class="bg-white/50 p-2 rounded-xl text-center text-xs font-black border-2 border-black">NEXT</div>
             </div>
         </div>
 
         <div class="bento-card md:col-span-2 bg-[#FB923C] group cursor-pointer">
             <div class="flex justify-between items-start mb-4">
-                <h3 class="text-4xl leading-none italic">DARK<br>MODE UI</h3>
+                <h3 class="text-4xl leading-none italic">Infernal<br>NetWork</h3>
             </div>
-            <p class="font-bold mb-6">Rediseño de sistema operativo basado en el estilo neo-brutalista.</p>
+            <p class="font-bold mb-6">Servidor con Modalidad Fast Farm, Mis Responsabilidades eran, Guiar al Equipo de Staff, La Moderacion y La Configuracion interna del Servidor, En ese servidor contaba con el rango Co OWNER Gracias a mi Actividad.</p>
             <div class="flex gap-2">
                 <span class="tag">Tailwind</span>
                 <span class="tag">UI/UX</span>
@@ -76,7 +91,7 @@
             <div class="flex gap-6 mt-4 md:mt-0 font-bold underline underline-offset-4 decoration-2 decoration-green-400">
                 <a href="#" class="hover:text-green-400">LinkedIn</a>
                 <a href="#" class="hover:text-green-400">Instagram</a>
-                <a href="mailto:benja@example.com" class="hover:text-green-400">Email</a>
+                <a href="mailto:xxfeoxx.developer@gmail.com" class="hover:text-green-400">Gmail</a>
             </div>
         </div>
 
