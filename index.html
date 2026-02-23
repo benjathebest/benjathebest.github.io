@@ -8,11 +8,14 @@
     
     <style>
         :root {
-            --bg-color: #0d1117;
-            --card-bg: #161b22;
-            --accent: #58a6ff;
-            --text-main: #c9d1d9;
-            --border: #30363d;
+            /* Paleta de colores Celeste y Azul */
+            --bg-color: #050a14;
+            --card-bg: #0d1626;
+            --accent: #00d4ff; /* Celeste brillante */
+            --accent-dark: #0056b3; /* Azul profundo */
+            --text-main: #e6f1ff;
+            --border: #1e2d40;
+            --gradient: linear-gradient(135deg, #00d4ff 0%, #0056b3 100%);
         }
 
         body {
@@ -22,6 +25,9 @@
             line-height: 1.6;
             margin: 0;
             padding: 20px;
+            /* Fondo con un toque de azul muy sutil */
+            background-image: radial-gradient(circle at top right, #002b5c, transparent);
+            background-attachment: fixed;
         }
 
         .container {
@@ -29,21 +35,21 @@
             margin: 0 auto;
         }
 
-        /* Portafolio con estilo de terminal */
         header {
-            border-bottom: 1px solid var(--border);
+            border-bottom: 2px solid var(--accent);
             padding-bottom: 2rem;
             margin-bottom: 2rem;
+            box-shadow: 0 4px 15px -10px var(--accent);
         }
 
         .username {
             font-family: 'Fira Code', monospace;
             color: var(--accent);
-            font-size: 1.5rem;
+            font-size: 1.8rem;
             font-weight: bold;
+            text-shadow: 0 0 10px rgba(0, 212, 255, 0.4);
         }
 
-        /* Color Grid asimetrico */
         .profile-section {
             display: grid;
             grid-template-columns: 2fr 1fr;
@@ -57,13 +63,15 @@
         .card {
             background: var(--card-bg);
             border: 1px solid var(--border);
-            border-radius: 8px;
+            border-radius: 12px;
             padding: 25px;
-            transition: border-color 0.3s ease;
+            transition: all 0.3s ease;
         }
 
         .card:hover {
             border-color: var(--accent);
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px -10px rgba(0, 212, 255, 0.3);
         }
 
         h2 {
@@ -76,15 +84,15 @@
         }
 
         .status-pill {
-            background: rgba(88, 166, 255, 0.1);
-            color: var(--accent);
+            background: var(--gradient);
+            color: white;
             padding: 4px 12px;
             border-radius: 20px;
             font-size: 0.75rem;
             font-weight: bold;
+            text-transform: uppercase;
         }
 
-        /* Estilo lista  de proyecto e actividades*/
         .skills-list {
             list-style: none;
             padding: 0;
@@ -94,31 +102,33 @@
         }
 
         .skill-tag {
-            background: #21262d;
-            border: 1px solid var(--border);
+            background: #162a45;
+            border: 1px solid var(--accent-dark);
             padding: 5px 12px;
-            border-radius: 4px;
+            border-radius: 6px;
             font-family: 'Fira Code', monospace;
             font-size: 0.85rem;
+            color: var(--accent);
         }
 
         .project-item {
             margin-bottom: 15px;
             padding-left: 15px;
-            border-left: 2px solid var(--border);
+            border-left: 3px solid var(--accent-dark);
         }
 
         .contact-links a {
-            color: var(--text-main);
+            color: var(--accent);
             text-decoration: none;
             display: block;
             margin-bottom: 10px;
             font-size: 0.9rem;
+            font-weight: bold;
         }
 
         .contact-links a:hover {
-            color: var(--accent);
             text-decoration: underline;
+            color: #fff;
         }
 
         .quote {
@@ -127,74 +137,12 @@
             margin-top: 40px;
             text-align: center;
             font-size: 0.9rem;
+            border-top: 1px solid var(--border);
+            padding-top: 20px;
         }
-    </style>
-</head>
-<body>
 
-    <div class="container">
-        <header>
-            <div class="username">Portafolio/xXFEOXx_</div>
-            <p style="margin: 5px 0;">Developer y Optimizador de servidores  (TPS)</p>
-        </header>
-
-        <div class="profile-section">
-            <div class="card">
-                <h2>Sobre mí <span class="status-pill">((Developer))</span></h2>
-                <p>
-                    Hola, soy <strong>Benjamín</strong> Me especializo en la configuracion y programacion de servidores, Tambien en la optimizacion  de servidores.
-                </p>
-                
-                <div style="margin-top: 20px;">
-                    <h3>Estos son los idiomas en los que configuro:</h3>
-                    <div class="skills-list">
-                        <span class="skill-tag">JavaScript</span>
-                        <span class="skill-tag">Python</span>
-                        <span class="skill-tag">SQL</span>
-                        <span class="skill-tag">YAML/Config</span>
-                        <span class="skill-tag">Skript</span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="card">
-                <h2>Mis Experiencias>
-                <div class="project-item">
-                    <strong>Virnox Network</strong>
-                    <p style="font-size: 0.8rem; margin: 0;">Manager / Dev</p>
-                </div>
-                <div class="project-item">
-                    <strong>Infernal Network</strong>
-                    <p style="font-size: 0.8rem; margin: 0;">Owner</p>
-                </div>
-                <div class="project-item">
-                    <strong>KyronMC & Cryndor</strong>
-                    <p style="font-size: 0.8rem; margin: 0;">Developer</p>
-                </div>
-            </div>
-        </div>
-
-        <div style="margin-top: 20px; display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
-            <div class="card">
-                <h2>Pueden Contactarme Aqui:</h2>
-                <div class="contact-links">
-                    <a href="#">📩 xxfeoxx.developer@gmail.com</a>
-                </div>
-            </div>
-            <div class="card" style="display: flex; align-items: center; justify-content: center;">
-                <div style="text-align: center;">
-                    <div style="font-size: 2rem;">⚡</div>
-                    <p style="margin: 0; font-weight: bold;">High Performance</p>
-                </div>
-            </div>
-        </div>
-
-        <p class="quote">"Me Enfoco en la programacion de servidores y optimizacion contactenme si les  interesa."</p>
-    </div>
-
-</body>
-</html>
-    </div>
-
-</body>
-</html>
+        .high-perf-icon {
+            background: var(--gradient);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-size: 2.5rem;
